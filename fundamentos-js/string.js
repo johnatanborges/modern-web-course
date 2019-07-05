@@ -16,4 +16,3 @@ console.log('Escola '.concat(escola).concat('!')); // Escola Cod3r!
 console.log(escola.replace(3, 'e')); // Coder
 
 console.log('Ana,Maria,Pedro'.split(',')); // ['Ana', 'Maria', 'Pedro']
-

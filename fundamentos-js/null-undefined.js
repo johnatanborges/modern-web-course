@@ -24,4 +24,3 @@ console.log(produto); // { preco: undefined }
 produto.preco = null;
 console.log(!!produto.preco); // false
 console.log(produto); // { preco: null }
-

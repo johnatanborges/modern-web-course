@@ -18,4 +18,3 @@ function test() {
 
 test();
 // console.log(local); // ReferenceError: local is not defined
-

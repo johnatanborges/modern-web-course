@@ -20,4 +20,3 @@ console.log(media.toString()); // 7.87099999999996
 console.log(media.toString(2)); // Converte para binário
 console.log(typeof media); // number
 console.log(typeof Number); // function
-

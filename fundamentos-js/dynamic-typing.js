@@ -11,4 +11,3 @@ console.log(typeof qualquer); // number
 let valor = '';
 let numero = 1;
 let pqp = false; // Produto Químo Perigoso... kkk
-
