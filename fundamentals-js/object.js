@@ -3,7 +3,7 @@ prod1.nome = 'Celular Ultra Mega';
 prod1.preco = 4998.90;
 prod1['Desconto Legal'] = 0.40; // evitar atributos com espaço
 
-console.log(prod1);
+console.log(prod1); // { nome: 'Celular Ultra Mega', preco: 4998.9, 'Desconto Legal': 0.4 }
 
 const prod2= {
     nome: 'Camisa Polo',
@@ -17,3 +17,10 @@ const prod2= {
 };
 
 console.log(prod2);
+/*
+{
+    nome: 'Camisa Polo',
+    preco: 79.9,
+    obj: { blabla: 1, obj: { blabla: 2 } }
+}
+*/

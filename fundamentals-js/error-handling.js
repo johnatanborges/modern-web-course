@@ -1,9 +1,9 @@
 function tratarErro(erro) {
-    // throw new Error('...');
-    // throw 10;
-    // throw true;
-    // throw 'mensagem';
-    throw {
+    // throw new Error('...'); // ...
+    // throw 10; // 10
+    // throw true; // true
+    // throw 'mensagem'; // mensagem
+    throw { // [object Object]
         nome: erro.name,
         msg: erro.message,
         date: new Date(),
@@ -16,7 +16,7 @@ function imprimirNomeGritado(obj) {
     } catch (e) {
         tratarErro(e);
     } finally {
-        console.log('final');
+        console.log('final'); // final
     }
 }
 

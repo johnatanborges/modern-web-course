@@ -13,4 +13,4 @@ console.log('a = ', a); // a = 2
 
 // console.log('b = ', b); // ReferenceError: Cannot access 'b' before initialization
 let b = 2;
-console.log('b =', b);
+console.log('b =', b); // b = 2

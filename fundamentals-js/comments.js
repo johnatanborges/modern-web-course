@@ -1,6 +1,6 @@
 // Comentário de uma linha
 
-console.log ('Linha 1');
+console.log ('Linha 1'); // Linha 1
 
 /*
 Comentário de
@@ -8,7 +8,7 @@ múltiplas
 linhas
 */
 
-console.log('Linha 2');
+console.log('Linha 2'); // Linha 2
 
 /*
 * Comentário de
@@ -16,4 +16,4 @@ console.log('Linha 2');
 * exemplo
 */
 
-console.log('Linha 3');
+console.log('Linha 3'); // Linha 3
