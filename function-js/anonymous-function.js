@@ -19,4 +19,4 @@ const pessoa = {
     }
 }
 
-pessoa.falar();
+pessoa.falar(); // Opa
