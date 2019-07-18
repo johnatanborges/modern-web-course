@@ -9,7 +9,7 @@ console.log(obj1, obj2); // { a: 1, b: 2, c: 3 } { a: 1, b: 2, c: 3 }
 const test = { [a]: a, [b]: b, [c]: c };
 console.log(test); // { '1': 1, '2': 2, '3': 3 }
 
-const obj = { first: a, second: b, third: c};
+const obj = { first: a, second: b, third: c };
 console.log(obj); // { first: 1, second: 2, third: 3 }
 
 const nomeAttr = 'nota';
@@ -21,7 +21,7 @@ console.log(obj3); // { nomeAttr: 7.87 }
 obj3[nomeAttr] = valorAttr;
 console.log(obj3); // { nomeAttr: 7.87, nota: 7.87 }
 
-const obj4 = {[nomeAttr]: valorAttr};
+const obj4 = { [nomeAttr]: valorAttr };
 console.log(obj4); // { nota: 7.87 }
 
 const obj5 = {
