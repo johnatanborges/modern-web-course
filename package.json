@@ -1,0 +1,25 @@
+{
+  "name": "modern-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnatanborges/web-modern-course.git"
+  },
+  "keywords": [],
+  "author": "Johnatan Borges <johnatanborges@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnatanborges/web-modern-course/issues"
+  },
+  "homepage": "https://github.com/johnatanborges/web-modern-course#readme"
+}
