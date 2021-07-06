@@ -1,26 +1,25 @@
-let valor; // não inicializado
-console.log(valor); // undefined
+let value;
+console.log(value); // undefined
+// console.log(newValue); // ReferenceError: newValue is not defined
+console.log(value.length); // TypeError: Cannot read property 'length' of undefined
 
-// console.log(novoValor); // ReferenceError: novoValor is not defined
+value = null;
+console.log(value); // null
+// console.log(value.toString()); // TypeError: Cannot read property 'toString' of null
 
+const product = {};
+console.log(product.price); // undefined
+// console.log(product.price.unity); // TypeError: Cannot read property 'unity' of undefined
 
-valor = null; // ausência de valor
-console.log(valor); // null
-// console.log(valor.toString()); // TypeError: Cannot read property 'toString' of null
+console.log(product); // {}
 
-const produto = {};
-console.log(produto.preco); // undefined
-// console.log(produto.preco.unidade); // TypeError: Cannot read property 'unidade' of undefined
+product.price = 3.50;
+console.log(product); // { price: 3.5 }
 
-console.log(produto); // {}
+product.price = undefined; //dont't do this
+console.log(!!product.price); // false
+console.log(price); // { price: undefined }
 
-produto.preco = 3.50;
-console.log(produto); // { preco: 3.5 }
-
-produto.preco = undefined;
-console.log(!!produto.preco); // false
-console.log(produto); // { preco: undefined }
-
-produto.preco = null;
-console.log(!!produto.preco); // false
-console.log(produto); // { preco: null }
+product.price = null;
+console.log(!!product.price); // false
+console.log(product); // { price: null }
