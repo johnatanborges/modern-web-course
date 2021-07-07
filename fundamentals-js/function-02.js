@@ -1,22 +1,22 @@
-// Armazenando uma função em uma variável
-const imprimirSoma = function (a, b) {
+// Anonymous function
+const printSum = function (a, b) {
     console.log(a + b);
 };
 
-imprimirSoma(2, 3); // 5
+printSum(2, 3); // 5
 
-// Armazenando uma função arrow em uma variável
-const soma = (a, b) => {
+// Arrow function
+const sum = (a, b) => {
     return a + b;
 };
 
-console.log(soma(2, 3)); // 5
+console.log(sum(2, 3)); // 5
 
-// retorno implícito
-const subtracao = (a, b) => a - b;
+// implicit return
+const sub = (a, b) => a - b;
 
-console.log(subtracao(5, 3)); // 2
+console.log(sub(5, 3)); // 2
 
-const imprimir = a => console.log(a);
+const print = a => console.log(a);
 
-imprimir('Nice!!!'); // Nice!!!
+print('Nice!!!'); // Nice!!!
