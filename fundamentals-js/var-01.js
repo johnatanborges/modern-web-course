@@ -2,19 +2,19 @@
     {
         {
             {
-                var sera = 'Será???';
-                console.log(sera); // Será???
+                var test = 'test???';
+                console.log(test); // test???
             }
         }
     }
 }
 
-console.log(sera); // Será???
+console.log(test); // test???
 
-function test() {
-    var local = 123;
-    console.log(local); // 123
+function myFunction() {
+    var localVariable = 123;
+    console.log(localVariable); // 123
 }
 
-test();
-// console.log(local); // ReferenceError: local is not defined
+myFunction();
+// console.log(localVariable); // ReferenceError: localVariable is not defined
