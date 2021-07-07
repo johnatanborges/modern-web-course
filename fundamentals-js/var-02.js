@@ -1,7 +1,7 @@
-var numero = 1;
+var number = 1;
 {
-    var numero = 2;
-    console.log('dentro = ', numero); // 2
+    var number = 2;
+    console.log('inside = ', number); // 2
 }
 
-console.log('fora = ', numero); // 2
+console.log('outside = ', number); // 2
