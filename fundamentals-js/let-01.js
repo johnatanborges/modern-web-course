@@ -1,59 +1,58 @@
-var numero = 1;
+var number = 1;
 {
-    let numero = 2;
-    console.log('dentro = ', numero); // 2
+    let number = 2;
+    console.log('inside = ', number); // 2
 }
 
-console.log('fora = ', numero); // 1
+console.log('outside = ', number); // 1
 
 // ----------------------------
 
-let numero2 = 1;
+let number2 = 1;
 {
-    let numero2 = 2;
-    console.log('dentro = ', numero2); // 2
+    let number2 = 2;
+    console.log('inside = ', number2); // 2
 }
 
-console.log('fora = ', numero2); // 1
+console.log('outside = ', number2); // 1
 
 // -----------------------------
 
-let numero3 = 1;
+let number3 = 1;
 {
-    let numero4 = 2;
-    console.log('dentro = ', numero3); // 1
+    console.log('inside = ', number3); // 1
 }
 
-console.log('fora = ', numero3); // 1
+console.log('outside = ', numero3); // 1
 
 // -----------------------------
 
-let numero5 = 1;
+let number5 = 1;
 {
-    // var numero5 = 2;
-    // console.log('dentro = ', numero5); // SyntaxError: Identifier 'numero5' has already been declared
+    // var number5 = 2;
+    // console.log('inside = ', number5); // SyntaxError: Identifier 'number5' has already been declared
 }
 
-console.log('fora = ', numero5); // 1
+console.log('outside = ', number5); // 1
 
 // -----------------------------
 
-let number1 = 1;
-console.log(number1); // 1
+let number6 = 1;
+console.log(number6); // 1
 
 {
-    let number1 = 2;
-    console.log(number1); // 2
+    let number6 = 2;
+    console.log(number6); // 2
     {
-        let number1 = 3;
-        console.log(number1); // 3
+        let number6 = 3;
+        console.log(number6); // 3
         {
-            let number1 = 4;
-            console.log(number1); // 4
+            let number6 = 4;
+            console.log(number6); // 4
         }
-        console.log(number1); // 3
+        console.log(number6); // 3
     }
-    console.log(number1); // 2
+    console.log(number6); // 2
 }
 
-console.log(number1); // 1
+console.log(number6); // 1
