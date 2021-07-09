@@ -1,20 +1,20 @@
-const valores = [7.7, 8.9, 6.3, 9.2];
-console.log(valores[0], valores[3]); // 7.7 9.2
-console.log(valores[4]); // undefined
+const values = [7.7, 8.9, 6.3, 9.2];
+console.log(values[0], values[3]); // 7.7 9.2
+console.log(values[4]); // undefined
 
-// valores[10] = 20;
-// console.log(valores); // [ 7.7, 8.9, 6.3, 9.2, <6 empty items>, 20 ]
-// console.log(valores.length); // 11
+// values[10] = 20;
+// console.log(values); // [ 7.7, 8.9, 6.3, 9.2, <6 empty items>, 20 ]
+// console.log(values.length); // 11
 
-valores[4] = 10;
-console.log (valores); // [ 7.7, 8.9, 6.3, 9.2, 10 ]
-console.log(valores.length); // 5
+values[4] = 10;
+console.log (values); // [ 7.7, 8.9, 6.3, 9.2, 10 ]
+console.log(values.length); // 5
 
-valores.push({id: 3}, false, null, 'teste');
-console.log(valores); // [7.7, 8.9, 6.3, 9.2, 10, { id: 3 }, false, null, 'teste']
+values.push({id: 3}, false, null, 'test');
+console.log(values); // [7.7, 8.9, 6.3, 9.2, 10, { id: 3 }, false, null, 'test']
 
-console.log(valores.pop()); // teste
-delete valores[0];
-console.log(valores); // [ <1 empty item>, 8.9, 6.3, 9.2, 10, { id: 3 }, false, null ]
+console.log(values.pop()); // test
+delete values[0];
+console.log(values); // [ <1 empty item>, 8.9, 6.3, 9.2, 10, { id: 3 }, false, null ]
 
-console.log(typeof valores); // object
+console.log(typeof values); // object
