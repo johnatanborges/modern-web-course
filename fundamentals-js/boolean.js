@@ -1,35 +1,35 @@
-let isAtivo = false;
-console.log(isAtivo); //false
+let isActive = false;
+console.log(isActive); //false
 
-isAtivo = true;
-console.log(isAtivo); // true
+isActive = true;
+console.log(isActive); // true
 
-isAtivo = 1;
-console.log(!!isAtivo); // true
+isActive = 1;
+console.log(!!isActive); // true
 
-// os verdadeiros
+// True
 console.log(!!3); // true
 console.log(!!-1); // true
-console.log(!!' '); // true - espaço em branco é verdadeiro
-console.log(!!'Texto'); // true
+console.log(!!' '); // true - blank space
+console.log(!!'Text'); // true
 console.log(!![]); // true
 console.log(!!{}); // true
 console.log(!!Infinity); // true
-console.log(!!(isAtivo = true)); // true
+console.log(!!(isActive = true)); // true
 
-// os falsos
+// False
 console.log(!!0); // false
-console.log(!!''); // false - string vazia é falso
+console.log(!!''); // false - empty string
 console.log(!!null); // false
 console.log(!!NaN); // false
 console.log(!!undefined); // false
-console.log(!!(isAtivo = false)); // false
+console.log(!!(isActive = false)); // false
 
-// pra finalizar...
+// To finish
 console.log(!!('' || null || 0 || ' ')); // true
 console.log('' || null || 0 || 123); // 123
-console.log('' || null || 0 || 'epa' || 123); // epa
+console.log('' || null || 0 || 'Hoop' || 123); // Hoop
 
 
-let nome = '';
-console.log(nome || 'Desconhecido');
+let text = '';
+console.log(text || 'unknown');
