@@ -1,20 +1,20 @@
-// Comentário de uma linha
+// Line comment
 //Testing
 
-console.log ('Linha 1'); // Linha 1
+console.log ('Line 1'); // Line 1
 
 /*
-Comentário de
-múltiplas
-linhas
+Multiple
+line
+comments
 */
 
-console.log('Linha 2'); // Linha 2
+console.log('Line 2'); // Line 2
 
 /*
-* Comentário de
-* múltiplas linhas
-* exemplo
+* Multiple
+* Line
+* Comments
 */
 
-console.log('Linha 3'); // Linha 3
+console.log('Line 3'); // Line 3
