@@ -1,39 +1,39 @@
-// atribuição por Referência
-let a = {name: 'Teste'};
-console.log(a); // { name: 'Teste' }
+// assignment by reference
+let a = {name: 'Test'};
+console.log(a); // { name: 'Test' }
 
 let b = a;
-console.log(b); // { name: 'Teste' }
+console.log(b); // { name: 'Test' }
 
-b.name = 'Opa';
-console.log(b); // { name: 'Opa' }
-console.log(a); // { name: 'Opa' }
+b.name = 'Hoop';
+console.log(b); // { name: 'Hoop' }
+console.log(a); // { name: 'Hoop' }
 
 b = null;
 console.log(b); // null
-console.log(a); // { name: 'Opa' }
+console.log(a); // { name: 'Hoop' }
 
 b = a;
-console.log(b); // { name: 'Opa' }
-console.log(a); // { name: 'Opa' }
+console.log(b); // { name: 'Hoop' }
+console.log(a); // { name: 'Hoop' }
 
 b.age = 2;
-console.log(b); // { name: 'Opa', age: 2 }
-console.log(a); // { name: 'Opa', age: 2 }
+console.log(b); // { name: 'Hoop', age: 2 }
+console.log(a); // { name: 'Hoop', age: 2 }
 
 b = 10;
 console.log(b); // 10
-console.log(a); // { name: 'Opa', age: 2 }
+console.log(a); // { name: 'Hoop', age: 2 }
 
 b = a;
-console.log(b); // { name: 'Opa', age: 2 }
-console.log(a); // { name: 'Opa', age: 2 }
+console.log(b); // { name: 'Hoop', age: 2 }
+console.log(a); // { name: 'Hoop', age: 2 }
 
 b = undefined;
 console.log(b); // undefined
-console.log(a); // { name: 'Opa', age: 2 }
+console.log(a); // { name: 'Hoop', age: 2 }
 
-// atribuição por valor (Tipos primitivos são passados por valor)
+// assignment by value (Primitive types)
 let c = 3;
 console.log(c); // 3
 
