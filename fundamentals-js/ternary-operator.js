@@ -1,4 +1,4 @@
-const resultado = nota => nota >= 7 ? 'Aprovado' : 'Reprovado';
+const result = grade => grade >= 7 ? 'Approved' : 'Disapproved';
 
-console.log(resultado(7.1)); // Aprovado
-console.log(resultado(6.8)); // Reprovado
+console.log(result(7.1)); // Approved
+console.log(result(6.8)); // Disapproved

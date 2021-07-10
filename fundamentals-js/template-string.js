@@ -1,19 +1,19 @@
-const nome = 'Rebeca';
-const concatenacao = 'Olá ' + nome + '!'; // Olá Rebeca!
+const name = 'Rebeca';
+const concatenation = 'Hello, ' + name + '!'; // Hello, Rebeca!
 
 const template = `
-    Olá
-    ${nome}!`;
+    Hello,
+    ${name}!`;
 
 /* output:
-    Olá
+    Hello,
     Rebeca!
 */
 
-console.log(concatenacao, template);
+console.log(concatenation, template);
 
-// expressões
+// expression
 console.log(`1 + 1 = ${1 + 1}`); // 1 + 1 = 2
 
-const up = texto => texto.toUpperCase();
-console.log(`Ei... ${up('cuidado')}`); // Ei... CUIDADO
+const up = text => text.toUpperCase();
+console.log(`Hey... ${up('you')}`); // Ei... YOU
