@@ -1,19 +1,19 @@
-function compras(trabalho1, trabalho2) {
-    const comprarSorvete = trabalho1 || trabalho2;
-    const comprarTv50 = trabalho1 && trabalho2;
-    // const comprarTv32 = !!(trabalho1 ^ trabalho2) // bitwise xor
-    const comprarTv32 = trabalho1 != trabalho2;
-    const materSaudavel = !comprarSorvete; // operador unário
+function purchases(job1, job2) {
+    const buyIceCream = job1 || job2;
+    const buyTV50 = job1 && job2;
+    // const buyTV50 = !!(job1 ^ job2) // xor
+    const buyTV50 = job1 != job2;
+    const isHealthy = !buyIceCream; // unary operator
 
-    return { comprarSorvete, comprarTv50, comprarTv32, materSaudavel };
+    return { buyIceCream, buyTV50, buyTV50, isHealthy };
 }
 
-console.log(compras(true, true));
+console.log(purchases(true, true));
 /*
 {
-comprarSorvete: true,
-comprarTv50: true,
-comprarTv32: false,
-materSaudavel: false
+buyIceCream: true,
+buyTV50: true,
+buyTV50: false,
+isHealthy: false
 }
 */
