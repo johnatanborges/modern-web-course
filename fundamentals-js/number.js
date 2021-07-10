@@ -1,22 +1,22 @@
-const peso1 = 1.0;
-const peso2 = Number('2.0');
+const weight1 = 1.0;
+const weight2 = Number('2.0');
 
-console.log(peso1, peso2); // 1 2
+console.log(weight1, weight2); // 1 2
 
-console.log(Number.isInteger(peso1)); // true
+console.log(Number.isInteger(weight1)); // true
 
-console.log(Number.isInteger(peso2)); // true
+console.log(Number.isInteger(weight2)); // true
 
-const avaliacao1 = 9.871;
-const avaliacao2 = 6.871;
+const evaluation1 = 9.871;
+const evaluation2 = 6.871;
 
-const total = avaliacao1 * peso1 + avaliacao2 * peso2;
-const media = total / (peso1 + peso2)
+const total = evaluation1 * weight1 + evaluation2 * weight2;
+const average = total / (weight1 + weight2)
 
 
-console.log(media); // 7.8709999999996
-console.log(media.toFixed(2)); // 7.87
-console.log(media.toString()); // 7.87099999999996
-console.log(media.toString(2)); // Converte para binário
-console.log(typeof media); // number
+console.log(average); // 7.8709999999996
+console.log(average.toFixed(2)); // 7.87
+console.log(average.toString()); // 7.87099999999996
+console.log(average.toString(2)); // Convert to binary
+console.log(typeof average); // number
 console.log(typeof Number); // function
