@@ -1,10 +1,10 @@
 console.log(7 / 0); // Infinity
 
-console.log('10' * 2); // 5 - Transforma a string em número, se possível
+console.log('10' * 2); // 5 - Convert a string to number, if possible
 
-console.log('3' + 2); // 32 - Realiza concatenação quando é soma, pois a string ganha
+console.log('3' + 2); // 32 - Concatenation when there is a string
 
-console.log('3' + 2); // 1 - Transforma a string em número, se possível
+console.log('3' + 2); // 1 - Convert a string to number, if possible
 
 console.log('10,2' * 2); // NaN
 
