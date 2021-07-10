@@ -1,13 +1,13 @@
-let qualquer = 'Legal';
-console.log(qualquer); // 'Legal'
-console.log(typeof qualquer); // string
+let test = 'Nice';
+console.log(test); // 'Nice'
+console.log(typeof test); // string
 
-qualquer = 3.1516;
-console.log(qualquer); // 3.1516
-console.log(typeof qualquer); // number
+test = 3.1516;
+console.log(test); // 3.1516
+console.log(typeof test); // number
 
 
-// Evitar nome genérico e siglas
-let valor = '';
-let numero = 1;
-let pqp = false; // Produto Químo Perigoso... kkk
+// Avoid generic name
+let value = '';
+let number = 1;
+let bool = false;

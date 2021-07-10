@@ -1,24 +1,24 @@
-function tratarErro(erro) {
+function handleError(error) {
     // throw new Error('...'); // ...
     // throw 10; // 10
     // throw true; // true
-    // throw 'mensagem'; // mensagem
+    // throw 'message'; // message
     throw { // [object Object]
-        nome: erro.name,
-        msg: erro.message,
+        name: error.name,
+        msg: error.message,
         date: new Date(),
     };
 }
 
-function imprimirNomeGritado(obj) {
+function printShoutedName(obj) {
     try {
         console.log(obj.name.toUpperCase() + '!!!');
     } catch (e) {
-        tratarErro(e);
+        handleError(e);
     } finally {
-        console.log('final'); // final
+        console.log('Final'); // Final
     }
 }
 
-const obj = { nome: 'Roberto' };
-imprimirNomeGritado(obj);
+const obj = { name: 'Roberto' };
+printShoutedName(obj);
