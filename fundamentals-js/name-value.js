@@ -1,8 +1,8 @@
 // name-value
-const greeting = 'Hey'; // contexto léxico
+const greeting = 'Hey'; // lexical context
 
 function exec() {
-    const greeting = 'Hoop'; // contexto léxico 2
+    const greeting = 'Hoop'; // lexical context 2
     return greeting;
 }
 
