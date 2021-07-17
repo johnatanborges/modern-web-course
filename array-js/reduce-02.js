@@ -1,13 +1,13 @@
-const alunos = [
-    { nome: 'João', nota: 7.3, bolsista: false },
-    { nome: 'Maria', nota: 9.2, bolsista: true },
-    { nome: 'Pedro', nota: 9.8, bolsista: false},
-    { nome: 'Ana', nota: 8.7, bolsista: true },
+const students = [
+    { name: 'João', grade: 7.3, colleger: false },
+    { name: 'Maria', grade: 9.2, colleger: true },
+    { name: 'Pedro', grade: 9.8, colleger: false},
+    { name: 'Ana', grade: 8.7, colleger: true },
 ]
 
-const todosBolsistas = (resultado, bolsista) => resultado && bolsista
-console.log(alunos.map(a => a.bolsista).reduce(todosBolsistas)) // false
+const allColleger = (result, colleger) => result && colleger
+console.log(students.map(student => student.colleger).reduce(allColleger)) // false
 
-const algumBolsista = (resultado, bolsista) => resultado || bolsista
-console.log(alunos.map(a => a.bolsista).reduce(algumBolsista)) // true
+const someColleger = (result, colleger) => result || colleger
+console.log(students.map(a => a.colleger).reduce(someColleger)) // true
 
