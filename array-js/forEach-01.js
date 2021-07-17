@@ -1,29 +1,28 @@
-const aprovados = ['Agatha', 'Aldo', 'Daniel', 'Raquel']
+const approved = ['Agatha', 'Aldo', 'Daniel', 'Raquel']
 
-aprovados.forEach( nome => console.log (nome))
+approved.forEach( name => console.log (name))
 // Agatha
 // Aldo
 // Daniel
 // Raquel
 
-aprovados.forEach(function(nome, indice) {
-    console.log(` ${indice + 1}, ${nome} `)
+approved.forEach(function(name, index) {
+    console.log(` ${index + 1}, ${name} `)
 })
 // 1, Agatha
 // 2, Aldo
 // 3, Daniel
 // 4, Raquel
 
+const showApproved = approved => console.log(approved)
 
-const exibirAprovados = aprovado => console.log(aprovado)
-
-aprovados.forEach(exibirAprovados)
+approved.forEach(showApproved)
 // Agatha
 // Aldo
 // Daniel
 // Raquel
 
-aprovados.forEach( (nome, indice, array) => {
+approved.forEach( (name, index, array) => {
     console.log(array)
 })
 // [ 'Agatha', 'Aldo', 'Daniel', 'Raquel' ]
