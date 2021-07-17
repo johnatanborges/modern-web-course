@@ -1,24 +1,24 @@
 console.log(typeof Array, typeof new Array, typeof []) // function object object
 
-let aprovados = new Array('Bia', 'Carlos', 'Ana')
-console.log(aprovados) // [ 'Bia', 'Carlos', 'Ana' ]
+let approved = new Array('Bia', 'Carlos', 'Ana')
+console.log(approved) // [ 'Bia', 'Carlos', 'Ana' ]
 
-aprovados = ['Bruna', 'Camila', 'Marcela']
-console.log(aprovados[0]) // Bruna
-console.log(aprovados[1]) // Camila
-console.log(aprovados[2]) // Marcela
-console.log(aprovados[3]) // undefined
+approved = ['Bruna', 'Camila', 'Marcela']
+console.log(approved[0]) // Bruna
+console.log(approved[1]) // Camila
+console.log(approved[2]) // Marcela
+console.log(approved[3]) // undefined
 
-aprovados[3] = 'Paulo'
-aprovados.push('Debora')
-console.log(aprovados.length) // 5
+approved[3] = 'Paulo'
+approved.push('Debora')
+console.log(approved.length) // 5
 
-aprovados[9] = 'Rafael'
-console.log(aprovados.length) // 10
-console.log(aprovados[8] === undefined) // true
-console.log(aprovados[8] === null) // false
+approved[9] = 'Rafael'
+console.log(approved.length) // 10
+console.log(approved[8] === undefined) // true
+console.log(approved[8] === null) // false
 
-console.log(aprovados)
+console.log(approved)
 /*
 [
     'Bruna',
@@ -32,8 +32,8 @@ console.log(aprovados)
 */
 
 // sort
-aprovados.sort()
-console.log(aprovados)
+approved.sort()
+console.log(approved)
 /*
 [
     'Bruna',
@@ -47,27 +47,27 @@ console.log(aprovados)
 */
 
 // delete
-delete aprovados[1]
-console.log(aprovados[1]) // undefined
-console.log(aprovados[2]) // Debora
+delete approved[1]
+console.log(approved[1]) // undefined
+console.log(approved[2]) // Debora
 
 // splice
-aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(1, 1)
-console.log(aprovados) // [ 'Bia', 'Ana' ]
+approved = ['Bia', 'Carlos', 'Ana']
+approved.splice(1, 1)
+console.log(approved) // [ 'Bia', 'Ana' ]
 
-aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(0, 2)
-console.log(aprovados) // [ 'Ana' ]
+approved = ['Bia', 'Carlos', 'Ana']
+approved.splice(0, 2)
+console.log(approved) // [ 'Ana' ]
 
-aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(1, 2, 'Elemento1', 'Elemento2')
-console.log(aprovados) // [ 'Bia', 'Elemento1', 'Elemento2' ]
+approved = ['Bia', 'Carlos', 'Ana']
+approved.splice(1, 2, 'Element1', 'Element2')
+console.log(approved) // [ 'Bia', 'Element1', 'Element2' ]
 
-aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(1, 0, 'Elemento1', 'Elemento2')
-console.log(aprovados) // [ 'Bia', 'Elemento1', 'Elemento2', 'Carlos', 'Ana' ]
+approved = ['Bia', 'Carlos', 'Ana']
+approved.splice(1, 0, 'Element1', 'Element2')
+console.log(approved) // [ 'Bia', 'Element1', 'Element2', 'Carlos', 'Ana' ]
 
-aprovados = ['Bia', 'Carlos', 'Ana']
-aprovados.splice(1, 1, 'Elemento1', 'Elemento2')
-console.log(aprovados) // [ 'Bia', 'Elemento1', 'Elemento2', 'Ana' ]
+approved = ['Bia', 'Carlos', 'Ana']
+approved.splice(1, 1, 'Element1', 'Element2')
+console.log(approved) // [ 'Bia', 'Element1', 'Element2', 'Ana' ]
