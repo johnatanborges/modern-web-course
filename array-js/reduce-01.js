@@ -1,15 +1,15 @@
-const alunos = [
-    { nome: 'João', nota: 7.3, bolsista: false },
-    { nome: 'Maria', nota: 9.2, bolsista: true },
-    { nome: 'Pedro', nota: 9.8, bolsista: false},
-    { nome: 'Ana', nota: 8.7, bolsista: true },
+const students = [
+    { name: 'João', grade: 7.3, colleger: false },
+    { name: 'Maria', grade: 9.2, colleger: true },
+    { name: 'Pedro', grade: 9.8, colleger: false},
+    { name: 'Ana', grade: 8.7, colleger: true },
 ]
 
-console.log(alunos.map(a => a.nota)) // [ 7.3, 9.2, 8.7 ]
+console.log(students.map(student => student.grade)) // [ 7.3, 9.2, 8.7 ]
 
-const resultado = alunos.map(a => a.nota). reduce(function(acumulador, atual) {
-    console.log(acumulador, atual)
-    return acumulador + atual
+const result = students.map(student => student.grade).reduce(function(acumulator, actual) {
+    console.log(acumulator, actual)
+    return acumulator + actual
 }, 0)
 
 // 0 7.3
@@ -17,4 +17,4 @@ const resultado = alunos.map(a => a.nota). reduce(function(acumulador, atual) {
 // 16.5 9.8
 // 26.3 8.7
 
-console.log(resultado) // 35
+console.log(result) // 35
