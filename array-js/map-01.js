@@ -1,10 +1,10 @@
 const num = [1, 2, 3, 4, 5]
 
-let resultado = num.map( e => {
+let result = num.map( e => {
     return e * 2
 })
 
-console.log(resultado, num) // [ 2, 4, 6, 8, 10 ] [ 1, 2, 3, 4, 5 ]
+console.log(result, num) // [ 2, 4, 6, 8, 10 ] [ 1, 2, 3, 4, 5 ]
 
 let teste = num.map( e => {
     //return e * 2
@@ -12,12 +12,12 @@ let teste = num.map( e => {
 
 console.log(teste) // [ undefined, undefined, undefined, undefined, undefined ]
 
-const soma10 = e => e + 10
+const sum10 = e => e + 10
 
-const triplo = e => e * 3
+const triple = e => e * 3
 
-const paraDinheiro = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
+const forMoney = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
 
-resultado = num.map(soma10).map(triplo).map(paraDinheiro)
+result = num.map(sum10).map(triple).map(forMoney)
 
-console.log(resultado) // [ 'R$ 33,00', 'R$ 36,00', 'R$ 39,00', 'R$ 42,00', 'R$ 45,00' ]
+console.log(result) // [ 'R$ 33,00', 'R$ 36,00', 'R$ 39,00', 'R$ 42,00', 'R$ 45,00' ]
