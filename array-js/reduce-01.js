@@ -1,8 +1,8 @@
 const students = [
-    { name: 'João', grade: 7.3, colleger: false },
-    { name: 'Maria', grade: 9.2, colleger: true },
-    { name: 'Pedro', grade: 9.8, colleger: false},
-    { name: 'Ana', grade: 8.7, colleger: true },
+    { name: 'João', grade: 7.3, isColleger: false },
+    { name: 'Maria', grade: 9.2, isColleger: true },
+    { name: 'Pedro', grade: 9.8, isColleger: false},
+    { name: 'Ana', grade: 8.7, isColleger: true },
 ]
 
 console.log(students.map(student => student.grade)) // [ 7.3, 9.2, 8.7 ]
