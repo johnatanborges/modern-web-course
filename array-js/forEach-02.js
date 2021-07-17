@@ -4,10 +4,10 @@ Array.prototype.forEach2 = function(callback) {
     }
 }
 
-const aprovados = ['Agatha', 'Aldo', 'Daniel', 'Raquel']
+const approved = ['Agatha', 'Aldo', 'Daniel', 'Raquel']
 
-aprovados.forEach(function(nome, indice, array) {
-    console.log(` ${indice + 1}, ${nome} `)
+approved.forEach(function(name, index, array) {
+    console.log(` ${index + 1}, ${name} `)
     console.log(array)
 })
 // 1, Agatha
@@ -18,4 +18,3 @@ aprovados.forEach(function(nome, indice, array) {
 // [ 'Agatha', 'Aldo', 'Daniel', 'Raquel' ]
 // 4, Raquel
 // [ 'Agatha', 'Aldo', 'Daniel', 'Raquel' ]
-
