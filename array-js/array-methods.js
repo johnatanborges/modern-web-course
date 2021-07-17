@@ -1,30 +1,29 @@
-const pilotos = ['Vettel', 'Alonso', 'haikkonen', 'Massa']
-pilotos.pop() // massa quebrou o carro!
-console.log(pilotos) // [ 'Vettel', 'Alonso', 'haikkonen' ]
+const pilots = ['Vettel', 'Alonso', 'Haikkonen', 'Massa']
+pilots.pop()
+console.log(pilots) // [ 'Vettel', 'Alonso', 'Haikkonen' ]
 
-pilotos.push('Verstappen')
-console.log(pilotos) // [ 'Vettel', 'Alonso', 'haikkonen', 'Verstappen' ]
+pilots.push('Verstappen')
+console.log(pilots) // [ 'Vettel', 'Alonso', 'Haikkonen', 'Verstappen' ]
 
-pilotos.shift() // remove o primeiro
-console.log(pilotos) // [ 'Alonso', 'haikkonen', 'Verstappen' ]
+pilots.shift()
+console.log(pilots) // [ 'Alonso', 'Haikkonen', 'Verstappen' ]
 
-pilotos.unshift('Hamilton')
-console.log(pilotos) // [ 'Hamilton', 'Alonso', 'haikkonen', 'Verstappen' ]
+pilots.unshift('Hamilton')
+console.log(pilots) // [ 'Hamilton', 'Alonso', 'Haikkonen', 'Verstappen' ]
 
 
-// splice pode adicionar e remover elementos
+// splice can add and remove
+// add
+pilots.splice(2, 0, 'Bottas')
+console.log(pilots) // [ 'Hamilton', 'Alonso', 'Bottas', 'Haikkonen', 'Verstappen' ]
 
-// adicionar
-pilotos.splice(2, 0, 'Bottas')
-console.log(pilotos) // [ 'Hamilton', 'Alonso', 'Bottas', 'haikkonen', 'Verstappen' ]
-
-// remover
-pilotos.splice(3, 1)
-console.log(pilotos) // [ 'Hamilton', 'Alonso', 'Bottas', 'Verstappen' ]
+// remove
+pilots.splice(3, 1)
+console.log(pilots) // [ 'Hamilton', 'Alonso', 'Bottas', 'Verstappen' ]
 
 // slice
-const algunsPilotos1 = pilotos.slice(2) // novo array
-console.log(algunsPilotos1) // [ 'Bottas', 'Verstappen' ]
+const somePilots1 = pilots.slice(2) // novo array
+console.log(somePilots1) // [ 'Bottas', 'Verstappen' ]
 
-const algunsPilotos2 = pilotos.slice(1, 3)
-console.log(algunsPilotos2) // [ 'Alonso', 'Bottas' ]
+const somePilots2 = pilots.slice(1, 3)
+console.log(somePilots2) // [ 'Alonso', 'Bottas' ]
