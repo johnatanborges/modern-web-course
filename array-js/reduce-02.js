@@ -1,13 +1,13 @@
 const students = [
-    { name: 'João', grade: 7.3, colleger: false },
-    { name: 'Maria', grade: 9.2, colleger: true },
-    { name: 'Pedro', grade: 9.8, colleger: false},
-    { name: 'Ana', grade: 8.7, colleger: true },
+    { name: 'João', grade: 7.3, isColleger: false },
+    { name: 'Maria', grade: 9.2, isColleger: true },
+    { name: 'Pedro', grade: 9.8, isColleger: false},
+    { name: 'Ana', grade: 8.7, isColleger: true },
 ]
 
-const allColleger = (result, colleger) => result && colleger
-console.log(students.map(student => student.colleger).reduce(allColleger)) // false
+const allColleger = (result, isColleger) => result && isColleger
+console.log(students.map(student => student.isColleger).reduce(allColleger)) // false
 
-const someColleger = (result, colleger) => result || colleger
-console.log(students.map(a => a.colleger).reduce(someColleger)) // true
+const someColleger = (result, isColleger) => result || isColleger
+console.log(students.map(a => a.isColleger).reduce(someColleger)) // true
 
