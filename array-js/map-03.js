@@ -17,7 +17,7 @@ const cart = [
 
 const toObject = json => JSON.parse(json)
 
-const onlyPrice = product => product.preco
+const onlyPrice = product => product.price
 
 const result = cart.map2(toObject).map2(onlyPrice)
 console.log(result) // [ 3.45, 13.9, 41.42, 7.5 ]
