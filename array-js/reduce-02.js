@@ -10,4 +10,3 @@ console.log(students.map(student => student.isColleger).reduce(allColleger)) // 
 
 const someColleger = (result, isColleger) => result || isColleger
 console.log(students.map(a => a.isColleger).reduce(someColleger)) // true
-
