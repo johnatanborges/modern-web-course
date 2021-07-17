@@ -16,8 +16,8 @@ const sum10 = e => e + 10
 
 const triple = e => e * 3
 
-const forMoney = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
+const toMoney = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
 
-result = num.map(sum10).map(triple).map(forMoney)
+result = num.map(sum10).map(triple).map(toMoney)
 
 console.log(result) // [ 'R$ 33,00', 'R$ 36,00', 'R$ 39,00', 'R$ 42,00', 'R$ 45,00' ]
