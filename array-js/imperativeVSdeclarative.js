@@ -1,19 +1,19 @@
-const alunos = [
-    { nome: 'João', nota: 7.9 },
-    { nome: 'Maria', nota: 9.2 }
+const students = [
+    { name: 'João', grade: 7.9 },
+    { name: 'Maria', grade: 9.2 }
 ]
 
 
 // Imperative
 let total1 = 0
-for (let i = 0; i < alunos.length; i++ ) {
-    total1 += alunos[i].nota
+for (let i = 0; i < students.length; i++ ) {
+    total1 += students[i].grade
 }
-console.log(total1/ alunos.length)
+console.log(total1/ students.length)
 
 // Declarative
-const getNota = aluno => aluno.nota
-const soma = (total, atual) => total + atual
+const getGrade = student => student.grade
+const sum = (total, actual) => total + actual
 
-const total2 = alunos.map(getNota).reduce(soma)
-console.log(total2 / alunos.length)
+const total2 = students.map(getGrade).reduce(sum)
+console.log(total2 / students.length)
