@@ -8,25 +8,25 @@ Array.prototype.filter2 = function(callback) {
     return newArray
 }
 
-const produtos = [
-    { nome: 'Notebook', preco: 2499, fragil: true },
-    { nome: 'iPad Pro', preco: 4199, fragil: true },
-    { nome: 'Copo de Vidro', preco: 12.49, fragil: true },
-    { nome: 'Copo de Plástico', preco: 18.99, fragil: false }
+const products = [
+    { name: 'Notebook', price: 2499, fragile: true },
+    { name: 'iPad Pro', price: 4199, fragile: true },
+    { name: 'Glass of glasses', price: 12.49, fragile: true },
+    { name: 'Plastic cup', price: 18.99, fragile: false }
 ]
 
-console.log(produtos.filter( e => {
+console.log(products.filter( e => {
     return false // []
 }))
 
-const fragil = produto => produto.fragil
+const fragile = product => product.fragile
 
 
-const caro = produto => produto.preco >= 500
+const expansive = product => product.price >= 500
 
-const resultado = produtos.filter2(fragil).filter2(caro)
-console.log(resultado)
+const result = products.filter2(fragile).filter2(expansive)
+console.log(result)
 // [
-//      { nome: 'Notebook', preco: 2499, fragil: true },
-//      { nome: 'iPad Pro', preco: 4199, fragil: true }
+//      { name: 'Notebook', price: 2499, fragile: true },
+//      { name: 'iPad Pro', price: 4199, fragile: true }
 // ]
