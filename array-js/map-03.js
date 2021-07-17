@@ -8,16 +8,16 @@ Array.prototype.map2 = function(callback) {
     return newArray
 }
 
-const carrinho = [
-    '{ "nome": "Borracha", "preco": 3.45 }',
-    '{ "nome": "Caderno", "preco": 13.90 }',
-    '{ "nome": "Kit de Lapis", "preco": 41.42 }',
-    '{ "nome": "Caneta", "preco": 7.50 }'
+const cart = [
+    '{ "name": "eraser", "price": 3.45 }',
+    '{ "name": "notebook", "price": 13.90 }',
+    '{ "name": "pencil kit", "price": 41.42 }',
+    '{ "name": "pen", "price": 7.50 }'
 ]
 
-const paraObjeto = json => JSON.parse(json)
+const toObject = json => JSON.parse(json)
 
-const apenasPreco = produto => produto.preco
+const onlyPrice = product => product.preco
 
-const resultado = carrinho.map2(paraObjeto).map2(apenasPreco)
-console.log(resultado) // [ 3.45, 13.9, 41.42, 7.5 ]
+const result = cart.map2(toObject).map2(onlyPrice)
+console.log(result) // [ 3.45, 13.9, 41.42, 7.5 ]
