@@ -1,27 +1,27 @@
-function soBoaNoticia(nota) {
-    if(nota >= 7) {
-        console.log('Aprovado com ' + nota);
+function onlyGoodNews(grade) {
+    if(grade >= 7) {
+        console.log('Approved with ' + grade);
     }
 }
 
-soBoaNoticia(8.1); // Aprovado com 8.1
-soBoaNoticia(6.8);
+onlyGoodNews(8.1); // Approved with 8.1
+onlyGoodNews(6.8);
 
-function seForVerdadeEuFalo(valor) {
-    if(valor) {
-        console.log('É verdade... ' + valor);
+function ifIsTrue(value) {
+    if(value) {
+        console.log('It`s true... ' + value);
     }
 }
 
-seForVerdadeEuFalo();
-seForVerdadeEuFalo(null);
-seForVerdadeEuFalo(undefined);
-seForVerdadeEuFalo(NaN);
-seForVerdadeEuFalo('');
-seForVerdadeEuFalo(0);
-seForVerdadeEuFalo(-1); // É verdade... -1
-seForVerdadeEuFalo(' '); // É verdade...
-seForVerdadeEuFalo('?'); // É verdade... ?
-seForVerdadeEuFalo([]); // É verdade...
-seForVerdadeEuFalo([1, 2]); // É verdade... 1,2
-seForVerdadeEuFalo({}); // É verdade... [object Object]
+ifIsTrue();
+ifIsTrue(null);
+ifIsTrue(undefined);
+ifIsTrue(NaN);
+ifIsTrue('');
+ifIsTrue(0);
+ifIsTrue(-1); // It`s true... -1
+ifIsTrue(' '); // It`s true...
+ifIsTrue('?'); // It`s true... ?
+ifIsTrue([]); // It`s true...
+ifIsTrue([1, 2]); // It`s true... 1,2
+ifIsTrue({}); // It`s true... [object Object]
