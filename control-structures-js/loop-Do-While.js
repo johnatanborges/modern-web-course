@@ -1,30 +1,30 @@
-function getInteiroAleatorioEntre(min, max) {
-    const valor = Math.random() * (max - min) + min;
-    return Math.floor(valor);
+function getIntBetween(min, max) {
+    const value = Math.random() * (max - min) + min;
+    return Math.floor(value);
 }
 
-let opcao = -1;
+let option = -1;
 
 do {
-    opcao = getInteiroAleatorioEntre(-1, 10);
-    console.log(`Opção escolhida foi ${opcao}.`);
-} while (opcao != -1);
+    option = getIntBetween(-1, 10);
+    console.log(`Chosen option was ${option}.`);
+} while (option != -1);
 
-console.log('Até a próxima');
+console.log('Bye bye');
 
 /*
-Opção escolhida foi 2.
-Opção escolhida foi 1.
-Opção escolhida foi 1.
-Opção escolhida foi 7.
-Opção escolhida foi 2.
-Opção escolhida foi 9.
-Opção escolhida foi 2.
-Opção escolhida foi 2.
-Opção escolhida foi 5.
-Opção escolhida foi 9.
-Opção escolhida foi 0.
-Opção escolhida foi 4.
-Opção escolhida foi -1.
-Até a próxima
+Chosen option was 2.
+Chosen option was 1.
+Chosen option was 1.
+Chosen option was 7.
+Chosen option was 2.
+Chosen option was 9.
+Chosen option was 2.
+Chosen option was 2.
+Chosen option was 5.
+Chosen option was 9.
+Chosen option was 0.
+Chosen option was 4.
+Chosen option was -1.
+Bye bye
 */
