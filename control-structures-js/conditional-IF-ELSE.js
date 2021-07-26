@@ -1,11 +1,11 @@
-const imprimirResultado = function(nota) {
-    if (nota >= 7) {
-        console.log('Aprovado');
+const printResult = function(grade) {
+    if (grade >= 7) {
+        console.log('Approved');
     } else {
-        console.log('Reprovado');
+        console.log('Disapproved');
     }
 };
 
-imprimirResultado(10); // Aprovado
-imprimirResultado(4); // Reprovado
-imprimirResultado('Epa!'); // Reprovado
+printResult(10); // Approved
+printResult(4); // Disapproved
+printResult('Hoop!'); // Disapproved
