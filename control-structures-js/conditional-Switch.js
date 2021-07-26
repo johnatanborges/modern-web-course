@@ -1,26 +1,26 @@
-const imprimirResultado = function(nota) {
-    switch (Math.floor(nota)) {
+const printResult = function(grade) {
+    switch (Math.floor(grade)) {
         case 10:
         case 9:
-            console.log('Quadro de Honra');
+            console.log('Honor board');
             break;
         case 8: case 7:
-            console.log('Aprovado');
+            console.log('Approved');
             break;
         case 6: case 5: case 4:
-            console.log('Recuperação');
+            console.log('Recovery');
             break;
         case 3: case 2: case 1: case 0:
-            console.log('Reprovado');
+            console.log('Disapproved');
             break;
         default:
-            console.log('Nota inválida');
+            console.log('Invalid grade');
     }
 };
 
-imprimirResultado(10); // Quadro de Honra
-imprimirResultado(8.9); // Aprovado
-imprimirResultado(6.55); // Recuperação
-imprimirResultado(2.3); // Reprovado
-imprimirResultado(-1); // Nota inválida
-imprimirResultado(11); // Nota inválida
+printResult(10); // Honor board
+printResult(8.9); // Approved
+printResult(6.55); // Recovery
+printResult(2.3); // Disapproved
+printResult(-1); // Invalid grade
+printResult(11); // Invalid grade
