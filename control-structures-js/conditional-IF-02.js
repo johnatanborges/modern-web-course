@@ -1,17 +1,17 @@
-function teste1(num) {
-    if(num > 7)
-        console.log(num);
+function test1(number) {
+    if(number > 7)
+        console.log(number);
 
     console.log('Final');
 }
 
-teste1(6); // Final
-teste1(8); // 8 Final
+test1(6); // Final
+test1(8); // 8 Final
 
-function test2(num) {
+function test2(number) {
     // be careful with ;
-    if(num > 7); {
-        console.log(num);
+    if(number > 7); {
+        console.log(number);
     }
 }
 
