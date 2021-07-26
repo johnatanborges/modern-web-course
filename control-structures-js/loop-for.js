@@ -1,20 +1,20 @@
-let contador = 1;
-while(contador <= 10) {
-    console.log(`contador = ${contador}`);
-    contador++;
+let counter = 1;
+while(counter <= 10) {
+    console.log(`counter = ${counter}`);
+    counter++;
 }
 
 /*
-contador = 1
-contador = 2
-contador = 3
-contador = 4
-contador = 5
-contador = 6
-contador = 7
-contador = 8
-contador = 9
-contador = 10
+counter = 1
+counter = 2
+counter = 3
+counter = 4
+counter = 5
+counter = 6
+counter = 7
+counter = 8
+counter = 9
+counter = 10
 */
 
 for (let i = 1; i <= 10; i++) {
@@ -34,10 +34,10 @@ i = 9
 i = 10
 */
 
-const notas = [6.7, 7.4, 9.8, 8.1, 7.7];
+const grade = [6.7, 7.4, 9.8, 8.1, 7.7];
 
-for (let i = 0; i < notas.length; i++) {
-    console.log(`nota = ${notas[i]}`);
+for (let i = 0; i < grade.length; i++) {
+    console.log(`nota = ${grade[i]}`);
 }
 
 /*
