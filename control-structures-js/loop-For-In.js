@@ -1,7 +1,7 @@
-const notas = [6.7, 7.4, 9.8, 8.1, 7.7];
+const grade = [6.7, 7.4, 9.8, 8.1, 7.7];
 
-for(let i in notas) {
-    console.log(i, notas[i]);
+for(let i in grade) {
+    console.log(i, grade[i]);
 }
 
 /*
@@ -12,20 +12,20 @@ for(let i in notas) {
 4 7.7
 */
 
-const pessoa = {
-    nome: 'Ana',
-    sobrenome: 'Silva',
-    idade: 29,
-    peso: 64,
+const person = {
+    name: 'Ana',
+    lastName: 'Silva',
+    age: 29,
+    weight: 64,
 };
 
-for (let atributo in pessoa) {
-    console.log(`${atributo}: ${pessoa[atributo]}`);
+for (let attribute in person) {
+    console.log(`${attribute}: ${person[attribute]}`);
 }
 
 /*
-nome: Ana
-sobrenome: Silva
-idade: 29
-peso: 64
+name: Ana
+lastName: Silva
+age: 29
+weight: 64
 */
